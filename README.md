@@ -1,17 +1,17 @@
-# Movie Review Sentiment Analysis App
+# Movie Review Sentiment Analysis App with Docker
 
-This app allows someone to paste or write a movie review, which is then analyzed using the Naive Bayes classifier trained on movie reviews to determine the sentiment of the review put into the app.
+## Project Description
+This project is used to determine the sentiment of a movie review through a Naive Bayes classifier. This is trained on movie reviews from an IMDB dataset. This project contains a Dockerfile, which will allow you to clone and operate this project on your own local host. 
 
-To run this on your local machine, these steps should take place:
+## Prerequisites
+In order to run the container, you must have installed:
+- Docker
+- Make 
 
-- First you would clone the repository using: git clone https://github.com/Nathaniel-Benton/Movie-Review-Sentiment-Analysis-App
-
-- Check to see if everything was copied over correctly using: git status
-
-- Create a virtual environment and install the libraries in the requirements.txt file.
-
-- Run the app to launch it in a local window using: streamlit run app.py
-
-- This process will open the app and allow use in a browser window.
-
-- You shouldn't need to run the training file, but if needed, the data can be found here: https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
+## How to Run
+To run this on your local machine, the steps you should follow are:
+- Clone the repository using "git clone https://github.com/Nathaniel-Benton/Movie-Review-Sentiment-Analysis-App"
+- Run the command "make build"
+- Run the command "make run"
+- Then paste "http://localhost:8501" into the browser window to open the app
+- Run the command "make clean" to remove the image
